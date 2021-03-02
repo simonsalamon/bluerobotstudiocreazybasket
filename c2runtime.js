@@ -26846,14 +26846,14 @@ cr.behaviors.scrollto = function(runtime)
 	behaviorProto.acts = new Acts();
 }());
 cr.getObjectRefTable = function () { return [
-	cr.plugins_.Mouse,
+	cr.plugins_.Audio,
 	cr.plugins_.Function,
 	cr.plugins_.Particles,
-	cr.plugins_.Touch,
-	cr.plugins_.Spritefont2,
+	cr.plugins_.Mouse,
 	cr.plugins_.Sprite,
+	cr.plugins_.Spritefont2,
+	cr.plugins_.Touch,
 	cr.plugins_.WebStorage,
-	cr.plugins_.Audio,
 	cr.behaviors.lunarray_LiteTween,
 	cr.behaviors.Pin,
 	cr.behaviors.Fade,
@@ -26923,7 +26923,7 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.exps.distance,
 	cr.plugins_.Sprite.prototype.exps.X,
 	cr.plugins_.Sprite.prototype.exps.Y,
-	cr.plugins_.Sprite.prototype.exps.Angle,
+	cr.system_object.prototype.exps.angle,
 	cr.plugins_.Sprite.prototype.acts.SubInstanceVar,
 	cr.plugins_.Touch.prototype.cnds.OnTapGestureObject,
 	cr.plugins_.Sprite.prototype.cnds.CompareInstanceVar,
@@ -26969,6 +26969,7 @@ cr.getObjectRefTable = function () { return [
 	cr.behaviors.Pin.prototype.acts.Unpin,
 	cr.system_object.prototype.exps.random,
 	cr.plugins_.Spritefont2.prototype.acts.SetWidth,
+	cr.plugins_.Sprite.prototype.exps.Angle,
 	cr.plugins_.Mouse.prototype.cnds.OnClick,
 	cr.system_object.prototype.cnds.PickNth,
 	cr.behaviors.Sin.prototype.acts.SetActive,
@@ -26978,3 +26979,4 @@ cr.getObjectRefTable = function () { return [
 	cr.behaviors.Sin.prototype.acts.SetMagnitude,
 	cr.plugins_.Sprite.prototype.acts.SetY
 ];};
+
